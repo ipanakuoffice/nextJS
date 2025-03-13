@@ -1,5 +1,6 @@
 import LikeButton from './like-button';
 import NavBar from './components/navBar';
+import SectionOne from './components/sectionOne';
 
  
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
   return (
     <div>
       <NavBar/>
+      <SectionOne/>
     </div>
   );
 }
