@@ -4,17 +4,20 @@ import logo from '../../public/logo.png'
 
 export default function NavBar() {
     return (
-        <>  
-     <div id="logo"><b>Logoku</b></div>
-        <div id="menu" className="flex-1 flex flex-row justify-evenly w-64">
-             <h1 className="font-bold text-lime-50">Layanan </h1>    
-             <h1 className="font-bold text-lime-50">Portofolo </h1>
-             <h1 className="font-bold text-lime-50">Tentang kami </h1>
-        </div>
-        <div id="sosmed" className=" w-32 flex justify-center">
-             instagram 
-        </div>
-        </>
+     <>
+     <div id="navbar" className="flex flex-row justify-evenly w-full px-60 py-8">
+          <div id="logo" className='flex flex-row w-full'>
+               <b className='text-white'>Logoku</b>
+          </div>
+          <div id="menu" className="flex flex-row justify-between w-full">
+             <p className=" text-lime-50 text-white">Tentang kami</p>
+             <p className=" text-lime-50 text-white">Layanan </p>    
+             <p className=" text-lime-50 text-white">Portofolo </p>
+             <p className=" text-lime-50 text-white">Comunity</p>
+          </div>
+     </div>  
+     
+     </>
     )   
   }
   
