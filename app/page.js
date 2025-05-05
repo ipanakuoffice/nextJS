@@ -1,8 +1,12 @@
 import LikeButton from './like-button';
 import NavBar from './components/navBar';
 import SectionOne from './components/sectionOne';
+import SectionTwo from './components/sectionTwo';
+import SectionThree from './components/sectionThree';
+import SectionFourth from './components/sectionFourth';
+import SectionFive from './components/sectionFive';
 
- 
+
 export default function HomePage() {
   const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
@@ -12,9 +16,15 @@ export default function HomePage() {
   }
  
   return (
-    <div>
+    <div className="flex justify-center py-8 min-h-screen bg-gray-100 w-full bg-red-500">
+    <div className='flex flex-col w-11/12 items-center '>
       <NavBar/>
       <SectionOne/>
+      <SectionTwo/>
+      <SectionThree/>
+      <SectionFourth/>
+      <SectionFive/>
+    </div>
     </div>
   );
 }
