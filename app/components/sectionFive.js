@@ -6,7 +6,7 @@ const sectionFive = () => {
         <div className='text-5xl pb-10 font-bold'>
             Join With Digivo Comunity
         </div>
-        <div className='grid grid-cols-3 gap-4 w-full'>
+        <div className='grid grid-cols-3 gap-4 w-full mb-12'>
 
         <a
   href="#"
@@ -26,12 +26,17 @@ const sectionFive = () => {
     </p>
   </div>
 </a>
-
-            
-
-        </div>
-        <div>
-
+    </div>
+        <div className='joinWithUs px-8 rounded-2xl bg-blue-500 flex flex-col items-center justify-center h-32'>
+            <p className='font-bold text-left justify-left w-full'> Become A Comunity </p>
+            <div className='grid grid-cols-2 gap-4 w-full '>
+                <div className='w-1/2 flex items-start text-xl '>
+                You can join with Orphan Foundation As a Comunity
+                </div>
+                <button>
+                    Join Now
+                </button>
+            </div>
         </div>
     </div>
   )
