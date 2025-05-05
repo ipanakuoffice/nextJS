@@ -6,6 +6,7 @@ import SectionThree from './components/sectionThree';
 import SectionFourth from './components/sectionFourth';
 import SectionFive from './components/sectionFive';
 import Footer from './components/footer';
+import Faq from './components/faq'
 
 
 export default function HomePage() {
@@ -17,7 +18,7 @@ export default function HomePage() {
   }
  
   return (
-    <div className="flex justify-center py-8 min-h-screen bg-gray-100 w-full bg-red-500">
+    <div className="flex justify-center py-8 min-h-screen w-full bg-gray-900">
     <div className='flex flex-col w-11/12 items-center '>
       <NavBar/>
       <SectionOne/>
@@ -25,6 +26,7 @@ export default function HomePage() {
       <SectionThree/>
       <SectionFourth/>
       <SectionFive/>
+      <Faq/>
       <Footer/>
     </div>
     </div>

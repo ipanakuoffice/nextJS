@@ -19,14 +19,32 @@ const footer = () => {
                 <p>08123819239109</p>
             </div>
         </div>
-        <div>
-            ini kedua
+        <div className='flex flex-col'>
+            <b>Menu</b>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Program</p>
+            <p>Join</p>
         </div>
         <div>
-            ini ketiga
+        <b>Menu</b>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Program</p>
+            <p>Join</p>
         </div>
         <div>
-            ini keempat
+            <div className='mb-12'>
+                <b >Quic Action</b>
+            </div>
+            <div className='flex flex-row w-full gap-3'>
+                <div className='bg-slate-500 rounded-2xl px-6 text-center flex items-center justify-center py-2'>
+                    Join Comuntiy
+                </div>
+                <div className='bg-black rounded-2xl px-6 text-center flex items-center justify-center'>
+                    Discuss Now
+                </div>
+            </div>
         </div>
     </div>
   )
