@@ -2,7 +2,7 @@ import React from 'react'
 
 const sectionFive = () => {
   return (
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full mb-12'>
         <div className='text-5xl pb-10 font-bold'>
             Join With Digivo Comunity
         </div>
