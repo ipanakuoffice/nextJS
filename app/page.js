@@ -13,13 +13,9 @@ export default function HomePage() {
   const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
  
-  function handleClick() {
-    setLikes(likes + 1);
-  }
- 
   return (
-    <div className="flex justify-center py-8 min-h-screen w-full bg-gray-900">
-    <div className='flex flex-col w-11/12 items-center '>
+    <div className="flex justify-center py-8 bg-gray-900 w-full px-12">
+    <div className='flex flex-col items-center '>
       <NavBar/>
       <SectionOne/>
       <SectionTwo/>

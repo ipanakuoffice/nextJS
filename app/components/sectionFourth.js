@@ -3,14 +3,15 @@ import Card2 from './cards/card2'
 
 const sectionFourth = () => {
   return (
-<div className='flex flex-col w-full mb-12 h-screen justify-center items-center'>
+<div className='flex flex-col w-1/2 sm:w-full mb-12   justify-center items-center '>
     <div className='flex justify-center items-center font-bold text-4xl pb-12'>
         Portfolios & Clients
     </div>
 
     {/* Clients Section */}
-    <div className='client px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 pb-12'>
-  {/* Card Client */}
+    <div className='client px-6 grid grid-rows-1  pb-12 w-full  '>
+      <div className='flex flex-row justify-between w-full'>
+          {/* Card Client */}
   {[1, 2, 3, 4].map((i) => (
     <div
       key={i}
@@ -23,10 +24,12 @@ const sectionFourth = () => {
       />
     </div>
   ))}
+
+      </div>
 </div>
 
     {/* Portfolios Section */}
-    <div className='portfolios grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 '>
+    <div className='portfolios grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6  w-full '>
         {/* Portfolio Card */}
         <Card2/>
         <Card2/>

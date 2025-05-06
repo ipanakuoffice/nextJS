@@ -2,7 +2,7 @@ import React from 'react'
 
 const footer = () => {
   return (
-    <div className='grid grid-cols-4 gap-3 w-full'>
+    <div className='grid grid-rows-1 sm:grid-cols-4 gap-3 w-full'>
         <div className='flex flex-col'>
             <h1 className='mb-6'>
                 Digivo <br/> Comuntiy
@@ -37,11 +37,11 @@ const footer = () => {
             <div className='mb-12'>
                 <b >Quic Action</b>
             </div>
-            <div className='flex flex-row w-full gap-3'>
-                <div className='bg-slate-500 rounded-2xl px-6 text-center flex items-center justify-center py-2'>
+            <div className='flex flex-col sm:flex-row w-1/2 sm:w-full gap-3'>
+                <div className='bg-slate-500 rounded-2xl px-2 text-sm text-center flex items-center justify-center py-1'>
                     Join Comuntiy
                 </div>
-                <div className='bg-black rounded-2xl px-6 text-center flex items-center justify-center'>
+                <div className='bg-black rounded-2xl px-2 py-1 text-sm text-center flex items-center justify-center'>
                     Discuss Now
                 </div>
             </div>
