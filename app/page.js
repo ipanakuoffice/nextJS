@@ -14,8 +14,7 @@ export default function HomePage() {
 
  
   return (
-    <div className="flex justify-center py-8 bg-gray-900 w-full px-12">
-    <div className='flex flex-col items-center '>
+    <div className='flex flex-col items-center justify-center py-8 bg-gray-900 w-full px-8 sm:px-24'>
       <NavBar/>
       <SectionOne/>
       <SectionTwo/>
@@ -24,7 +23,6 @@ export default function HomePage() {
       <SectionFive/>
       <Faq/>
       <Footer/>
-    </div>
     </div>
   );
 }

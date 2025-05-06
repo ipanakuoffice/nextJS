@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const faq = () => {
     return (
-      <div className="mb-32 relative w-1/2 sm:w-full flex flex-col sm:flex-row pt-10 pb-8 mt-8 shadow-xl">
+      <div className="mb-32 relative w-full sm:w-full flex flex-col sm:flex-row pt-10 pb-8 mt-8 shadow-xl">
             <div className="px-5  w-full flex flex-col justify-center items-center">
           <div className="flex flex-col items-center">
           <h2 className="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">FAQ</h2>
@@ -15,7 +15,7 @@ const faq = () => {
               <div className="py-5" key={index}>
                 <details className="group">
                   <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                    <span>{item.question}</span>
+                    <span className='font-bold'>{item.question}</span>
                     <span className="transition group-open:rotate-180">
                       <svg fill="none" height="24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
                         <path d="M6 9l6 6 6-6" />
