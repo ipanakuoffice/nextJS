@@ -3,7 +3,7 @@ import Card2 from './cards/card2'
 
 const sectionFourth = () => {
   return (
-<div className='flex flex-col w-full sm:w-full mb-12 justify-center items-center mb-36 '>
+<div className='flex flex-col w-full sm:w-full justify-center items-center min-h-screen' id='portofolio'>
     <div className='flex justify-center items-center font-bold text-4xl pb-12'>
         Portfolios & Clients
     </div>
@@ -28,7 +28,7 @@ const sectionFourth = () => {
 </div>
 
     {/* Portfolios Section */}
-    <div className='portfolios grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  w-full '>
+    <div className='portfolios grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center w-full '>
         {/* Portfolio Card */}
         <Card2/>
         <Card2/>

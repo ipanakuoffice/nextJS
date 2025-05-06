@@ -3,7 +3,7 @@ import React from 'react'
 
 const sectionTwo = () => {
   return (
-    <div className='flex flex-col justify-center sm:w-full h-screen'>
+    <div className='flex flex-col justify-center sm:w-full min-h-screen' id='about'>
         <div className='row grid-rows-1 sm:grid-cols-2 gap-4 w-full '>
             <div>
                 <h1 className='font-bold text-4xl mb-6 text-center sm:text-left  '> Who Is Digivo Comunity </h1>

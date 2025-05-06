@@ -41,7 +41,7 @@ const footer = () => {
                 <div className='bg-slate-500 rounded-2xl px-6 text-sm text-center flex items-center justify-center py-1'>
                     Join Comuntiy
                 </div>
-                <div className='bg-black rounded-2xl px-6 py-1 text-sm text-center flex items-center justify-center'>
+                <div className='bg-black rounded-2xl px-6 text-sm text-center flex items-center justify-center py-1'>
                     Discuss Now
                 </div>
             </div>
