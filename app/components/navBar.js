@@ -2,15 +2,36 @@
 
 import Image from 'next/image';
 import Logo from '../../public/whiteLogo.png';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 60) {
+        // Scroll down
+        setShowNavbar(false);
+      } else {
+        // Scroll up
+        setShowNavbar(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="w-full bg-[#0B0E1E] px-4 py-3 shadow-md z-50">
+      <nav className="w-full px-4 py-3 shadow-md z-50">
         <div className="hidden md:flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image src={Logo} width={42} height={42} alt="Logo" />
@@ -30,7 +51,7 @@ export default function NavBar() {
       </nav>
 
       {/* Mobile Top Bar */}
-      <div className="pt-8    fixed top-0 left-0 w-full bg-[#0B0E1E] px-4 py-3 flex md:hidden justify-between items-center z-50">
+      <div className={`fixed top-0 left-0 w-full bg-[#0B0E1E] px-4 py-3 flex md:hidden justify-between items-center z-50 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
         <Image src={Logo} width={42} height={42} alt="Logo" />
         <button
           className="text-white focus:outline-none z-50"

@@ -5,7 +5,7 @@ const sectionFourth = () => {
   return (
 <div className='flex flex-col w-full sm:w-full justify-center items-center min-h-screen' id='portofolio'>
     <div className='flex justify-center items-center font-bold text-4xl pb-12'>
-        Portfolios & Clients
+        Portofolio & Clients
     </div>
 
     {/* Clients Section */}
