@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const faq = () => {
     return (
-      <div className="mb-16 relative w-full flex flex-row bg-red pt-10 pb-8 mt-8 shadow-xl ">
+      <div className="mb-32 relative w-full flex flex-row bg-red pt-10 pb-8 mt-8 shadow-xl">
             <div className="px-5  w-full flex flex-col justify-center items-center">
           <div className="flex flex-col items-center">
           <h2 className="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">FAQ</h2>
-          <p className="mt-3 text-lg text-neutral-500 md:text-xl">Frequently asked questions</p>
+          <p className="mt-3 text-lg text-white md:text-xl">Frequently asked questions</p>
           </div>
           <div className="items-center w-full justify-center mt-8 grid grid-cols-3 gap-8 ">
             {/* Repeatable Item */}
@@ -22,7 +22,7 @@ const faq = () => {
                       </svg>
                     </span>
                   </summary>
-                  <p className="group-open:animate-fadeIn mt-3 text-neutral-600">{item.answer}</p>
+                  <p className="group-open:animate-fadeIn mt-3 text-white">{item.answer}</p>
                 </details>
               </div>
             ))}

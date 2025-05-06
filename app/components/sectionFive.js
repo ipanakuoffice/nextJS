@@ -1,41 +1,29 @@
 import React from 'react'
+import Card3 from './cards/card3'
 
 const sectionFive = () => {
   return (
-    <div className='flex flex-col w-full mb-12'>
-        <div className='text-5xl pb-10 font-bold'>
+    <div className='flex flex-col w-full h-auto'>
+        <div className='text-4xl pb-10 font-bold'>
             Join With Digivo Comunity
         </div>
-        <div className='grid grid-cols-3 gap-4 w-full mb-12'>
-
-        <a
-  href="#"
-  className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
->
-  <img
-    className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-    src="/docs/images/blog/image-4.jpg"
-    alt=""
-  />
-  <div className="flex flex-col justify-between p-4 leading-normal">
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-      Noteworthy technology acquisitions 2021
-    </h5>
-    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-      Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-    </p>
-  </div>
-</a>
+    <div className='grid grid-cols-3 gap-4 w-full mb-12'>
+      <Card3/>
+      <Card3/>
+      <Card3/>
     </div>
-        <div className='joinWithUs px-8 rounded-2xl bg-blue-500 flex flex-col items-center justify-center h-32'>
-            <p className='font-bold text-left justify-left w-full'> Become A Comunity </p>
-            <div className='grid grid-cols-2 gap-4 w-full '>
-                <div className='w-1/2 flex items-start text-xl '>
-                You can join with Orphan Foundation As a Comunity
+        <div className='joinWithUs px-8 rounded-2xl bg-blue-500 flex flex-col items-center justify-center h-24'>
+            <div className='grid grid-cols-2 gap-4 w-full h-full '>
+                <div className='w-1/2 flex items-start text-sm justify-center flex-col'>
+                  <p className='font-bold text-left justify-left w-full text-xl'> Become A Comunity </p>
+                  <p>You can join with Digivo as Comunity </p>
                 </div>
-                <button>
+                <div className='flex h-full w-full justify-center items-center '>
+                <button className='bg-white text-black px-8 rounded-xl'>
                     Join Now
                 </button>
+                </div>
+                
             </div>
         </div>
     </div>
