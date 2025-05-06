@@ -14,7 +14,7 @@ const sectionFourth = () => {
   {[1, 2, 3, 4].map((i) => (
     <div
       key={i}
-      className="flex justify-center items-center bg-white rounded-lg shadow border p-4 hover:shadow-md transition"
+      className="flex justify-center items-center shadow border hover:shadow-md transition"
     >
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ercDncGsEV9NkGdp78EyagH6U3ZFKiLyfQ&s"
